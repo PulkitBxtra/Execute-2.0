@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="border">
+        <img src="loginlogo.jpg" id="login" alt="">
+        <div id="heading">Welcome Back</div>
+        <div id="enter">enter your credentials to access your account </div>
+    <form action="backend.php">
+        <br>
+        <div id="name">
+            Name (नाम)<br>
+            <input type="text" id="namebox" name="myname" required>
+        </div>
+        <br>
+        <br>
+        <div id="phonenumber">
+            PHONE NUMBER (फ़ोन नंबर) <br> 
+            <input value="+91" type="phonenumber" name="phonenumber" title="Error Message(Your phone number should be of 10 digits and should contain numbers)" pattern="+91[1-9]{1}[0-9]{9}" required>
+        </div>
+        <br><br>
+        <div id="button">
+            <input id="submit" type="submit" value="Submit now(जमा करे)">&nbsp;&nbsp;&nbsp;&nbsp; <input id="reset" type="reset" value="Reset now(रीसेट करें)" >
+            <br>
+        </div>
+    </form>
+    </div>
+
+</body>
+</html>

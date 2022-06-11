@@ -1,0 +1,90 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background-color:rgb(43, 43, 43);
+}
+
+/* -----------------dash---------- */
+
+#Nav{
+    background-color: black;
+}
+
+#Nav ul li{
+    display: inline-block;
+    /* float:right; */
+    padding-left:3vw;
+    padding-right:1vw;
+    padding-top:10px;
+    padding-bottom:1vw;
+    background-color: black;
+}
+
+#Nav ul li p{
+    color:white;
+    font-family:'poppins',sans-serif;
+    font-weight:200;
+}
+
+
+/* --------vertical------ */
+
+
+
+#left{
+    color:white;
+    font-family: 'poppins',sans-serif;
+    font-weight:200;
+    margin-right:65vw;
+}
+
+
+#vertical ul li{
+    padding-top:20px;
+    padding-left:40px;
+    padding-right:5px;
+    padding-bottom:20px;
+    /* float:right; */
+    /* display: block; */
+    list-style: none;
+    text-decoration: none;
+}
+
+#vertical ul li a{
+    color:white;
+    font-family:'poppins',sans-serif;
+    font-weight:400;
+    margin-left:1vw;
+    margin-top:2vh;
+    margin-bottom:2vh;
+    text-decoration: none;
+}
+
+#vertical ul li i{
+    color:white;
+}
+
+#vertical ul li:hover{
+    background-color:#70def1;
+}
+
+#vertical ul{
+    background-color:#5a7bb5;
+    display: block;
+    /* padding-right:20px; */
+    height:100%;
+    position: fixed;
+    /* overflow:auto; */
+
+}
+
+#vertical ul li:hover a,#vertical ul li:hover i{
+    color:black
+}
+
+#vertical ul{
+    width:13vw;
+}

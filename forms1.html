@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms1.css">
+    <title>Document</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://kit.fontawesome.com/9beeaa63a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <a href="index.html"><i id="back" class="fa-solid fa-angle-left fa-3x"></i></a>
+
+    <div id="border">
+        <div id="heading">Sign up</div>
+    <form action="backend.php">
+        <br>
+        <div id="name">
+            Name <br><input id="name" type="text" name="myname" required>
+        </div>
+        <br>
+        <br>
+        <div id="phonenumber">
+            PHONE NUMBER   <br><input  id="phone" value="+91 " type="phonenumber" name="phonenumber" title="Error Message(Your phone number should be of 10 digits and should contain numbers)" pattern="[1-9]{1}[0-9]{9}" required>
+        </div>
+        <br> 
+        <br> 
+        <div id="area">
+            Set Your Password  <br><input id="password" type="password" name="area" required>
+        </div>
+        <br> 
+        <div id="service">
+            <label for="Service"> I'm a  </label>
+            <br>
+            <select id="services" name="Services" id="Service" required>
+                <option value="consumer">Consumer</option>
+                <option value="seller">Seller</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <br> 
+        <div id="button">
+            <a href="./Dash/nearMe.html"><input id="submit" type="submit" value="Submit"> &nbsp;</a>
+            <br>
+        </div>
+    </form>
+
+
+    <div id="sign">
+        
+        <hr id="already">
+        <p>Already a user? <a href="forms2-0.html">Sign in</a></p>
+
+    </div>
+
+
+
+    </div>
+
+
+
+
+    <br>    
+    <br>    
+    <br>    
+    <br>    
+    <br>       
+
+    <!-- adding the script  -->
+    <script type="module">
+
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+
+        const firebaseConfig = {
+          apiKey: "AIzaSyBiJnIvW8AGSB20tzLvzp5m7fVlQwyir3w",
+          authDomain: "execute-45866.firebaseapp.com",
+          projectId: "execute-45866",
+          storageBucket: "execute-45866.appspot.com",
+          messagingSenderId: "128133419054",
+          appId: "1:128133419054:web:6d274697db408a59574fbf"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        import {getDatabase, ref, set} from "https://www.gstatic.com/firebasejs/9.8.2/firebase-database.js"
+
+        const db = getDatabase();
+
+        // Reference
+        let namebox = document.getElementById("name");
+        let phonebox = document.getElementById("phone");
+        let passbox = document.getElementById("password");
+        let serbox = document.getElementById("services");
+
+        let insBtn = document.getElementById("submit")
+
+        function InsertData(){
+            set(ref(db, "TheStudents/" + phonebox.value),{
+                NameofStd: namebox.value,
+                RollNo: phonebox.value,
+                Section: passbox.value,
+                Gender: serbox.value
+            })
+            .then(()=>{
+                alert("user addded successfully");
+            })
+            .catch((error)=>{
+                alert("something" + error);
+            });
+        }
+
+        insBtn.addEventListener('click', InsertData);
+
+      </script>
+
+</body>
+</html>

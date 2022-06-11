@@ -1,0 +1,285 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    
+}
+
+section{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    /* overflow-x: hidden; */
+    /* overflow-y:hidden ; */
+    /* overflow:hidden; */
+}
+
+body{
+    background-color: rgb(24, 24, 24);
+    overflow-x: hidden;
+}
+
+#body-header{
+    background:url(Elements/1653736813162.jpg);
+    
+    height:95vh;
+    background-size: cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    
+}
+
+/* -------------------------nav bar---------------------------- */
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding:10px;
+    /* position: static; */
+    text-align: center;
+    
+    
+}
+
+
+
+.navbar li{
+    display: inline-block;
+    margin-left:50px;
+    /* align-te: center; */
+}
+
+.navbar img{
+    width: 100px;
+    padding-top:3px;
+    align-items: left;
+}
+
+.navbar li a{
+    text-decoration: none;
+    font-family: 'poppins',sans-serif;
+    font-weight: 200;
+    font-size: 150%;
+    color:whitesmoke;
+    
+}
+
+.navbar li a:hover{
+    color:#70DEF1;
+    transition: 0.5s;
+    
+}
+
+.navbar li h3{
+    font-family: 'poppins',sans-serif;
+    font-weight:100;
+}
+
+#body-header h3{
+    text-align: center;
+    font-family: 'popins',sans-serif;
+}
+
+#image{
+    height:300px;
+    margin-left:40%;
+    margin-top:60px;
+    /* background-color: red; */
+}
+
+#signin{
+    background-color: #70DEF1;
+    border: none;
+    border-radius:3px;
+    color: black;
+    padding: 4px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+    cursor: pointer;
+    font-family: 'poppins',sans-serif;
+}
+
+#signin:hover{
+    background-color:white;
+    color:#5A7BB5;
+    transition-duration: 0.5s;
+}
+
+
+/* -----------background---------- */
+
+
+.background{
+    width:1080px;
+    height: auto;
+}
+
+.background img{
+    width: 1425px;
+}
+
+
+/* ------------------div-------------- */
+
+
+/* #home ul li{
+    /* text-align:center; */
+#Home{
+    margin-top:20vh;
+}
+
+#Home ul li h1{
+    color:white;
+    font-family:'poppins',sans-serif;
+    font-weight:200;
+    margin-left:28%;
+    font-size:700%;
+    
+}
+
+#Home ul li p{
+    color:white;
+    font-family:'poppins',sans-serif;
+    font-weight:100;
+    font-size:100%;
+    margin-left:20%;
+    margin-right:20%;
+}
+
+
+#signup{
+    background-color: #70DEF1;
+    border: none;
+    border-radius:3px;
+    color: black;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+    cursor: pointer;
+    font-family: 'poppins',sans-serif;
+    margin-left:45%;
+    margin-top:5vh;
+
+}
+
+
+#signup:hover{
+    background-color:white;
+    color:#5A7BB5;
+    transition-duration: 0.5s;
+}
+
+
+/* -------about------  */
+
+#About{
+
+    height:75vh;
+}
+
+
+#About h2{
+    color:#70DEF1;
+    font-family:'poppins',sans-serif;
+    font-weight:300;
+    font-size:5vh;
+    margin-left:2vw;
+    margin-top:2vh;
+
+}
+
+/* #About p::first-word{
+    font-weight: 500;
+} */
+
+#About hr{
+    width: 40vw;
+    margin-left:4vh;
+    border-radius:50%;
+    background-color:#70DEF1;
+    color:#70DEF1;
+    border-color:#70DEF1;
+}
+
+
+#About ul li p{
+    color:white;
+    margin-left:2vw;
+    margin-right:32vw;
+    font-family:'poppins',sans-serif;
+    font-weight:200;
+}
+
+#carocel{
+    margin-top:-51% ;
+    margin-bottom:1%;
+}
+
+#carocel ul li{
+    display: block;
+    /* margin-top:-10%; */
+}
+
+#carocel ul li img{
+    width:20%;
+    margin-left:75%;
+    opacity:0.3;
+    /* margin-top:-10px; */
+}
+
+#carocel ul li img:hover {
+    opacity:1;
+}
+
+
+/* --------contact------------- */
+
+#Contact{
+    background-image: linear-gradient(to bottom right,#5a7bb58c, #70def18c,#5a7bb58c );
+    height: 50vh;
+    margin-top:50vh;
+}
+
+#Contact h3{
+    margin-left:42%;
+    font-family:'poppins',sans-serif;
+    font-weight:400;
+    color:#70def1;
+    font-size:30px;
+    margin-bottom:7%;
+
+}
+
+#Contact ul li h4{
+    font-family:'poppins',sans-serif;
+    font-weight:400;
+    font-size:1.1rem;
+    color:white;
+    margin-bottom:3vh;
+    margin-left:5%;
+
+}
+
+#Contact p{
+    color:white;
+    /* position:fixed; */
+    /* background-color: black; */
+    font-family:'poppins',sans-serif;
+    font-weight:200;
+    text-align: center;
+    margin-top:8vh;
+}

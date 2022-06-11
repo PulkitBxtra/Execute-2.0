@@ -1,0 +1,147 @@
+body{
+    background-image: linear-gradient(to top right,#5a7bb5, #70def1,#5a7bb5 );
+    
+}
+#border{
+    border-radius: 10px;
+    width: 80%;
+    height: 84vh;
+    margin-left: 10%;
+    /* margin-top: 4%; */
+    background-color: white; 
+}
+#heading{
+    color: #5a7bb5;
+    font-size: 40px;
+    display: inline-block;
+    margin-left: 38%;
+    font-family:'poppins',sans-serif;
+    font-weight:500;
+    margin-top:3vh;
+}
+
+#back{
+    color:white;
+    margin-left:20px;
+    margin-top:5px;
+}
+
+#back:hover{
+    color:#5a7bb5;
+}
+
+
+#login{
+    width: 60px;
+    height: 60px;
+    border-radius: 200px;
+    margin-left: 400px;
+    margin-top: 10px;
+    font-family:'poppins',sans-serif;
+}
+#enter{
+    margin-left: 36.5%;
+    font-size: 15px;
+    font-family:'poppins',sans-serif;
+}
+#name{
+    margin-left: 5vw;
+    font-family: 'poppins',sans-serif;
+}
+#name:hover{
+    cursor: pointer;
+}
+
+#name input{
+    padding-right:70%;
+    font-size:25px;
+    border-radius:5px;
+    /* margin-left:10px; */
+}
+#phonenumber{
+    margin-left: 5vw;
+    font-family: 'poppins',sans-serif;
+}
+#phonenumber:hover{
+    cursor: pointer;
+}
+
+#phonenumber input{
+    padding-right:70%;
+    font-size:25px;
+    border-radius:5px;
+    /* margin-left:10px; */
+}
+#button{
+    margin-left: 70px;
+    margin-top: 30px;
+}
+#submit{
+    background-image: linear-gradient(to right, #70def1,#5a7bb5 );
+    border: none;
+    border-radius:3px;
+    color: black;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 1vw; */
+    cursor: pointer;
+    font-family: 'poppins',sans-serif;
+}
+#reset{
+    background-image: linear-gradient(to right, #70def1,#5a7bb5 );
+    border: none;
+    border-radius:3px;
+    color: black;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+    cursor: pointer;
+    font-family: 'poppins',sans-serif;
+    /* border:solid; */
+}
+#submit:hover{
+    background-color:white;
+    color:white;
+    transition-duration: 0.2s;
+    /* border:solid; */
+}
+#reset:hover{
+    background-color:white;
+    color:white;
+    transition-duration: 0.2s;
+    /* border:solid; */
+}
+#already{
+    margin-left:10vh;
+    margin-right:10vh;
+    /* background-color: blue; */
+    border:0.2px solid;
+    border-radius:300%;
+    border-color:#70def1;
+}
+
+/* #sign{
+    margin-:1vh;
+}
+ */
+
+#sign p{
+    color:grey;
+    background-color: white;
+    margin-left:41%;
+    margin-right:39%;
+    margin-top:-20px;
+    font-family: 'poppins',sans-serif;
+    
+}
+
+#sign p a{
+    text-decoration:none;
+    color:#5a7bb5;
+}
